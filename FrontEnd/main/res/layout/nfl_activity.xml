@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="329dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="1stpageLogo"
+        android:src="@drawable/mysportslogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nflLogo"
+        android:layout_width="322dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="nba"
+        android:src="@drawable/nfl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/return_nfl"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/blue2"
+        android:text="Return"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/signout_nfl"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/blue2"
+        android:text="Sign Out"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="2dp"
+        android:text="Get all your favorite player's stats here:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nflLogo" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="434dp"
+        android:layout_height="621dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/qbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="282dp"
+                android:text="Favorite Quarterbacks:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/qb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Josh Allen"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qbs" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/allen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qb1" />
+
+            <TextView
+                android:id="@+id/allen"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="20dp"
+                android:text="Quarterback Rating: 70.6\nCompletion Percentage: 66.9%\nPass Yards for the Season: 3,447 Yds\nPassing Touchowns: 25 TDs\nInterceptions: 14\nRush Yards and TDs: 374 YDs and 10 TDs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.325"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Tommy Devito"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/devito"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/devito"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:text="Quarterback Rating: 26.2\nCompletion Percentage: 65.9%\nPass Yards for the Season: 855 Yds\nPassing Touchowns: 8 TDs\nInterceptions: 3\nRush Yards and TDs: 154 YDs and 1 TD(s)"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/allen" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jalen Hurts"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hurts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+
+            <TextView
+                android:id="@+id/hurts"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:text="Quarterback Rating: 60.3\nCompletion Percentage: 66.5%\nPass Yards for the Season: 3,192 Yds\nPassing Touchowns: 19 TDs\nInterceptions: 10\nRush Yards and TDs: 460 YDs and 12 TDs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView26"
+                app:layout_constraintTop_toBottomOf="@+id/devito" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lamar Jackson"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lamar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+            <TextView
+                android:id="@+id/lamar"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:text="Quarterback Rating: 59.8\nCompletion Percentage: 66.8%\nPass Yards for the Season: 2,934 Yds\nPassing Touchowns: 16 TDs\nInterceptions: 6\nRush Yards and TDs: 644 YDs and 5 TDs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView31"
+                app:layout_constraintTop_toBottomOf="@+id/hurts" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daniel Jones"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+
+            <ImageView
+                android:id="@+id/imageView45"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jones"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView42"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/jones"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:text="Quarterback Rating: 38.5\nCompletion Percentage: 67.5%\nPass Yards for the Season: 909 Yds\nPassing Touchowns: 2 TDs\nInterceptions: 6\nRush Yards and TDs: 206 YDs and 1 TD(s)"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView45"
+                app:layout_constraintTop_toBottomOf="@+id/lamar" />
+
+            <TextView
+                android:id="@+id/jonesir"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:text="Out for the Season: ACL Tear"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.695"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jones" />
+
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Patrick Mahomes"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView45" />
+
+            <ImageView
+                android:id="@+id/imageView46"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mahomes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+            <TextView
+                android:id="@+id/mahomes"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:text="Quarterback Rating: 66.8\nCompletion Percentage: 66.9%\nPass Yards for the Season: 3,398 Yds\nPassing Touchowns: 23 TDs\nInterceptions: 11\nRush Yards and TDs: 339 YDs and 0 TD(s)"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView46"
+                app:layout_constraintTop_toBottomOf="@+id/jonesir" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brock Purdy"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView46" />
+
+            <ImageView
+                android:id="@+id/imageView47"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/purdy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <TextView
+                android:id="@+id/purdy"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:text="Quarterback Rating: 74.7\nCompletion Percentage: 70.2%\nPass Yards for the Season: 3,553 Yds\nPassing Touchowns: 25 TDs\nInterceptions: 7\nRush Yards and TDs: 138 YDs and 2 TDs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView47"
+                app:layout_constraintTop_toBottomOf="@+id/mahomes" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CJ Stroud"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView47" />
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:src="@drawable/stroud"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.011"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+            <TextView
+                android:id="@+id/stroud"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:text="Quarterback Rating: 55.3\nCompletion Percentage: 62.4%\nPass Yards for the Season: 3,631 Yds\nPassing Touchowns: 20 TDs\nInterceptions: 5\nRush Yards and TDs: 143 YDs and 3 TDs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView48"
+                app:layout_constraintTop_toBottomOf="@+id/purdy" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tua Tagovailoa"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.012"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView48" />
+
+            <ImageView
+                android:id="@+id/imageView49"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tua"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.011"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+
+            <TextView
+                android:id="@+id/tua"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:text="Quarterback Rating: 59.3\nCompletion Percentage: 70.0%\nPass Yards for the Season: 3,697 Yds\nPassing Touchowns: 24 TDs\nInterceptions: 10\nRush Yards and TDs: 55 YDs and 0 TD(s)"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView49"
+                app:layout_constraintTop_toBottomOf="@+id/stroud" />
+
+            <TextView
+                android:id="@+id/rbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Favorite Running backs:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView49" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saquon Barkley"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.012"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rbs" />
+
+            <ImageView
+                android:id="@+id/imageView50"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/barkley"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView47"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/barkley"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="40dp"
+                android:text="Rush Yards: 783 YDs\nCarries: 185\nRush Touchdowns: 3\nReceving Yards: 183 YDs\nReceiving Touchdowns: 4 TDs\nFumbles: 2"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.695"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tua" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DeeJay Dallas"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView50" />
+
+            <ImageView
+                android:id="@+id/imageView51"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dallas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+
+            <TextView
+                android:id="@+id/dallas"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:text="Rush Yards: 34 YDs\nCarries: 9\nRush Touchdowns: 0\nReceving Yards: 26 YDs\nReceiving Touchdowns: 0 TDs\nFumbles: 0"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView51"
+                app:layout_constraintTop_toBottomOf="@+id/barkley" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Christian McCaffrey"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.013"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView51" />
+
+
+            <ImageView
+                android:id="@+id/imageView52"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cmc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+            <TextView
+                android:id="@+id/cmc"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Rush Yards: 1,177 YDs\nCarries: 226\nRush Touchdowns: 12\nReceving Yards: 437 YDs\nReceiving Touchdowns: 5 TDs\nFumbles: 1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView52"
+                app:layout_constraintTop_toBottomOf="@+id/dallas" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Raheem Mostert"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView52" />
+
+            <ImageView
+                android:id="@+id/imageView53"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mostert"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+
+            <TextView
+                android:id="@+id/mostert"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:text="Rush Yards: 924 YDs\nCarries: 183\nRush Touchdowns: 16\nReceving Yards: 170 YDs\nReceiving Touchdowns: 2 TDs\nFumbles: 2"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView53"
+                app:layout_constraintTop_toBottomOf="@+id/cmc" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isiah Pacheco"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView53" />
+
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pacheco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.002"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <TextView
+                android:id="@+id/pacheco"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:text="Rush Yards: 779 YDs\nCarries: 176\nRush Touchdowns: 6\nReceving Yards: 209 YDs\nReceiving Touchdowns: 1 TD(s)\nFumbles: 0"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView54"
+                app:layout_constraintTop_toBottomOf="@+id/mostert" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kenneth Walker III"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.012"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView54" />
+
+            <ImageView
+                android:id="@+id/imageView55"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/walker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.002"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+
+            <TextView
+                android:id="@+id/walker"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="14dp"
+                android:text="Rush Yards: 34 YDs\nCarries: 157\nRush Touchdowns: 6\nReceving Yards: 206 YDs\nReceiving Touchdowns: 1 TD(s)\nFumbles: 0"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView55"
+                app:layout_constraintTop_toBottomOf="@+id/pacheco" />
+
+            <TextView
+                android:id="@+id/receivers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Favorite Receivers:"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView55" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tank Dell"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/receivers" />
+
+            <ImageView
+                android:id="@+id/imageView56"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dell"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+
+            <TextView
+                android:id="@+id/dell"
+                android:layout_width="250dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="40dp"
+                android:text="Receiving Yards: 709 YDs\nTargets: 75\nRecptions: 47\nReceving Touchdownss: 7 TDs\nRush Yards: 51 YDs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView56"
+                app:layout_constraintTop_toBottomOf="@+id/walker" />
+
+            <TextView
+                android:id="@+id/dellir"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:text="Out for the Season: Fibula"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.701"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dell" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Steffon Diggs"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView56" />
+
+            <ImageView
+                android:id="@+id/imageView57"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/diggs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+
+            <TextView
+                android:id="@+id/diggs"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="36dp"
+                android:text="Receiving Yards: 993 YDs\nTargets: 132\nRecptions: 87\nReceving Touchdowns: 8 TDs\nRush Yards: 0 YDs\nFumbles: 2"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView57"
+                app:layout_constraintTop_toBottomOf="@+id/dellir" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Zay Flowers"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView57" />
+
+            <ImageView
+                android:id="@+id/imageView58"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/zay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+
+            <TextView
+                android:id="@+id/zay"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:text="Receiving Yards: 673 YDs\nTargets: 90\nRecptions: 64\nReceving Touchdowns: 3 TDs\nRush Yards: 56 YDs\nFumbles: 0"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView58"
+                app:layout_constraintTop_toBottomOf="@+id/diggs" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tyreek Hill"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView58" />
+
+            <ImageView
+                android:id="@+id/imageView59"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tyreek"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+
+            <TextView
+                android:id="@+id/tyreek"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:text="Receiving Yards: 1,542 YDs\nTargets: 132\nRecptions: 97\nReceving Touchdowns: 12 TDs\nRush Yards: 15 YDs\nFumbles: 1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView59"
+                app:layout_constraintTop_toBottomOf="@+id/zay" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travis Kelce"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView59" />
+
+            <ImageView
+                android:id="@+id/imageView60"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/kelce"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+
+            <TextView
+                android:id="@+id/kelce"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:text="Receiving Yards: 896 YDs\nTargets: 103\nRecptions: 80\nReceving Touchdowns: 5 TDs\nRush Yards: 0 YDs\nFumbles: 1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView60"
+                app:layout_constraintTop_toBottomOf="@+id/tyreek" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DK Metcalf"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView60" />
+
+            <ImageView
+                android:id="@+id/imageView61"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dk"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+
+            <TextView
+                android:id="@+id/dk"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:text="Receiving Yards: 864 YDs\nTargets: 93\nRecptions: 51\nReceving Touchdowns: 7 TDs\nRush Yards: 0 YDs\nFumbles: 0"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView61"
+                app:layout_constraintTop_toBottomOf="@+id/kelce" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jaylen Waddle"
+                android:textColor="@color/red2"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView61" />
+
+            <ImageView
+                android:id="@+id/imageView62"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/waddle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+
+            <TextView
+                android:id="@+id/waddle"
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:text="Receiving Yards: 822 YDs\nTargets: 91\nRecptions: 63\nReceving Touchdowns: 3 TDs\nRush Yards: 10 YDs\nFumbles: 0"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView62"
+                app:layout_constraintTop_toBottomOf="@+id/dk" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
